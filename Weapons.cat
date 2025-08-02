@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="a22d-4dd0-c59d-57d3" name="Weapons" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="4" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue library="true" id="a22d-4dd0-c59d-57d3" name="Weapons" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="5" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Bolt pistol" hidden="false" id="2942-f783-d627-33c5">
       <profiles>
@@ -6054,23 +6054,6 @@
       </profiles>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <comment>SL</comment>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af7d-af64-6b7d-da9d" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
           <comment>SL+Cmd/Spec/Champ Only</comment>
         </modifier>
       </modifiers>
@@ -6081,9 +6064,9 @@
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Pyroclast Flame Projector" hidden="false" id="087a-e7b6-26df-b2c9">
+    <selectionEntry type="upgrade" import="true" name="Pyroclast flame projector" hidden="false" id="087a-e7b6-26df-b2c9">
       <profiles>
-        <profile name="Pyroclast Flame Projector (Dispersed)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="b1d0-80be-f4a6-340f" noindex="false">
+        <profile name="Pyroclast flame projector (dispersed)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="b1d0-80be-f4a6-340f" noindex="false">
           <characteristics>
             <characteristic name="R" typeId="cdb0-8654-6840-1037">Template</characteristic>
             <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
@@ -6094,7 +6077,7 @@
             <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Flame, Melta</characteristic>
           </characteristics>
         </profile>
-        <profile name="Pyroclast Flame Projector (Focussed)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="53dc-74d2-3eda-0adb">
+        <profile name="Pyroclast flame projector (focussed)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="53dc-74d2-3eda-0adb">
           <characteristics>
             <characteristic name="R" typeId="cdb0-8654-6840-1037">12</characteristic>
             <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
@@ -6110,19 +6093,19 @@
         <infoLink name="Panic (X)" id="7b9f-84ce-5bd4-47eb" hidden="false" type="rule" targetId="82a7-f471-3fda-6ca1">
           <comment>1 (Dispersed)</comment>
           <modifiers>
-            <modifier type="set" value="Panic (1) (Dispersed)" field="name"/>
+            <modifier type="set" value="Panic (1)" field="name"/>
           </modifiers>
         </infoLink>
         <infoLink name="Template" id="e1f5-33b6-8b24-2566" hidden="false" type="rule" targetId="7df2-9e88-3285-cf6a">
           <comment>(Dispersed)</comment>
           <modifiers>
-            <modifier type="set" value="Template (Dispersed)" field="name"/>
+            <modifier type="set" value="Template" field="name"/>
           </modifiers>
         </infoLink>
         <infoLink name="Melta (X)" id="7350-eeae-2283-5338" hidden="false" type="rule" targetId="8ef6-917e-93da-43c3">
           <comment>6 (Focussed)</comment>
           <modifiers>
-            <modifier type="set" value="Melta (6) (Focussed)" field="name"/>
+            <modifier type="set" value="Melta (6)" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
